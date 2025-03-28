@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color: #ecebeb;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+            }
+        
+        .header {
+        background-color: #636262;
+        color: rgb(129, 148, 255);
+        text-align: center;
+        padding: 20px;
+        }
+
+        /* The navbar container */
+        .topnav {
+        overflow: hidden;
+        background-color: #333;
+        }
+
+        /* Navbar links */
+        .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+
+        /* Links - change color on hover */
+        .topnav a:hover {
+        background-color: #616bfa;
+        color: rgb(0, 0, 0);
+        }
+
+        /* Centralize a imagem */
+        #imagem {
+            text-align: center;
+            padding: 2px;
+            
+        }
+
+         #imagem img {
+            display: block;
+            margin: 4px auto;
+            border: 2px solid #000;
+
+        }
+        #imagem > a{
+            background-color: #c5c3c3;
+            border: 2px solid #000;
+            text-decoration: none;
+            color: #3052b9;
+            padding: 1px;
+            box-shadow: 2px 2px #666;
+        }
+
+        #imagem :hover{
+           border: 2px solid #b2b6e6;
+           background-color: #616bfa;
+           color: #000000;
+           transition: background-color 0.5s;
+        }
+
+        #introducao {
+            text-align: center;
+        }
+
+        /* Create three equal columns that floats next to each other */
+        #row {
+            display: grid;
+            padding: 15px;
+            grid-template-columns: auto auto auto;
+        }
+
+        #column {
+            padding: 10px;
+        }
+
+        /*Botão do desafio 2 */
+        #button { 
+            background-color: #0483aa;
+            border: none;
+            color: white;
+            padding: 5px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            margin: 4px 2px;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.5s;
+            border-radius: 4px;
+            border: 1px solid #0483aa;
+            box-shadow: 2px 2px #666;
+        }
+        #button:hover{
+            background-color: rgb(168, 237, 241);
+            border: 1px solid #000;
+            color: #000000;
+            transform: scale(1.1);
+        }
+        #button:active{
+            border: 1px solid #0b17c2;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Banda DJavú</h1>
+        </div>
+
+        <div class="topnav">
+
+            <a href="Desafio 4.html">Galeria de capas</a>
+            <a href="Desafio 6.html">Media Queries</a>
+            <a href="Desafio 8.html">Tabela de discos</a>
+        </div>
+        <div id="imagem">
+            <img src="imagens/Djavu.jpg" alt="DJavu" width="260" height="145">
+            <a target="_blank" href="https://open.spotify.com/intl-pt/artist/4adpoL1QBRZW6jWjRVMB04">Spotify</a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCNH0PIZJ0bqmV3kY2yH4IGQ">Youtube</a>
+        </div>
+        <div id="row">
+            <div class="column">
+              <h2>Introdução</h2>
+              <p>A Banda Djavú é um grupo musical brasileiro que teve sua origem na cidade de Capim Grosso, Bahia, em 2008. A Banda foi fundada pelos integrantes Nádila Freire, Geandson Rios e DJ Juninho Portugal.</p>
+              <p>O nome da banda foi inspirado no termo francês "déjà vu", que se traduz como "já visto".</p>
+              <p>Em 2008, a Banda Djavú lançou seu primeiro álbum intitulado "O Furacão é Show" e logo em seguida lançou seu primeiro DVD, que alcançou distribuição nacional.</p>
+            </div>
+            
+            <div class="column">
+              <h2>Curiosidades</h2>
+              <ul>
+                <li>Dos integrantes originais, apenas Geandson Rios atua na banda atualmente </li>
+                <li>Adotaram o ritmo Tecnobrega, um gênero musical surgido no Pará que mistura elementos de música internacionalmente comercial, como música eletrônica e música pop, com gêneros regionais paraenses, como Calypso e forró eletrônico. </li>
+                <li>Na virada de 2015 para 2016, apresentaram-se como uma das principais atrações da festa de réveillon oficial da cidade de São Paulo, realizada na Avenida Paulista.</li>
+              </ul>
+            </div>
+            <!-- Desafio 2 -->
+            <div id="column">
+              <h2>Musícas mais ouvidas</h2>
+                <ol>
+                    <li>Me libera <a target="_blank" href="https://open.spotify.com/intl-pt/track/2Mu8Y7FBKm1pExucSO16Vf?si=1f09fdf1dddb445a" id="button">Ouvir agora</a></li>
+                    <li>Rubi <a target="_blank" href="https://open.spotify.com/intl-pt/track/3lsl4nVHAsSm6oag0qKCko?si=9825e62b44604c0c" id="button">Ouvir agora</a></li>
+                    <li>Meteoro <a target="_blank" href="https://open.spotify.com/intl-pt/track/48PzkSfXRDSGgPYAHn2HkK?si=aa2559389c8e47f6" id="button">Ouvir agora</a></li>
+                </ol>
+              
+            </div>
+          </div>
+
+    </body>
+</html>
