@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+    <head>
+        <title>Som Web - Banda Djavú</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Link para a biblioteca Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <style>
+            * {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            
+            /* cabecalho da pagina */
+            .header {
+            background-color: #636262;
+            color: rgb(255, 94, 0);
+            text-align: center;
+            padding: 20px;
+            }
+             /* Centralize a imagem */
+             #imagem {
+            text-align: center;
+            padding: 2px;
+            
+            }
+
+            #imagem img {
+            display: block;
+            margin: 4px auto;
+            border: 2px solid #000;
+
+            }
+            #imagem > a{
+            background-color: #c5c3c3;
+            border: 2px solid #000;
+            text-decoration: none;
+            color: #3052b9;
+            padding: 1px;
+            box-shadow: 2px 2px #666;
+            }
+            #imagem :hover {
+                border: 2px solid #b2b6e6;
+                background-color: #616bfa;
+                color: #000000;
+                transition:0.5s;
+            }
+
+            /* barra de navegacao */
+            .navbar {
+            background-color: rgb(65, 65, 65) !important; /* !important sobrescreve outras regras */
+            }
+
+            .navbar-nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            color: white;
+            }
+
+            /* itens da barra de nave. */
+            .nav-item {
+            flex: 0.2;
+            text-align: center;
+            color: white !important;
+            }
+
+            /* animacoes da barra de nav */
+            .nav-item:hover {
+            background-color: grey;
+            border-radius: 30px; 
+            transform: scale(1.13);
+            transition: 0.3s;
+            }
+            
+            /* txt dos botoes q ficam na barra de nav */
+            .navbar-nav .nav-link {
+              color: rgb(255, 255, 255) !important; 
+            }
+
+
+            /* botoes das opcoes do dropdown */
+            .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+              background-color: grey; 
+              color: white;
+              border-radius: 7px;
+            }
+             /* Estilo das colunas */
+             #row {
+                display: grid;
+                padding: 15px;
+                grid-template-columns: auto auto auto;
+                gap: 20px;
+            }
+
+            #column {
+                padding: 10px;
+            }
+
+            /* Botão do desafio 2 */
+            #button { 
+                background-color: #0483aa;
+                border: none;
+                color: white;
+                padding: 5px 10px;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 12px;
+                margin: 4px 2px;
+                cursor: pointer;
+                text-align: center;
+                transition: all 0.5s;
+                border-radius: 4px;
+                border: 1px solid #0483aa;
+                box-shadow: 2px 2px #666;
+            }
+
+            #button:hover {
+                background-color: rgb(168, 237, 241);
+                border: 1px solid #000;
+                color: #000000;
+                transform: scale(1.1);
+            }
+
+            #button:active {
+                border: 1px solid #0b17c2;
+            }
+
+            /* Alinhamento dos botões */
+            .music-list {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .music-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #ddd;
+                padding: 5px 0;
+            }
+
+            .music-item a {
+                margin-left: 10px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+          <h1>Banda DJavu</h1>
+        </div>
+        <!-- barra de navegacao utilizando as classes do bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <!-- criar um botao na barra de nave. -->
+                  <li class="nav-item"> 
+                    <a class="nav-link" href="shows.html">SHOWS</a>
+
+                  <!-- cria o botao de dropdown -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      PLAYLISTS
+                    </a>
+                    <!-- cria as opcoes de dropdown -->
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a target="_blank" class="dropdown-item" href="https://www.youtube.com/watch?v=ao6czn5JhVQ&list=PL3UMQClCoIOPwz2qZPseAhJBpZssX0nat">MAIS TOCADAS</a></li>
+                        <li><a target="_blank" class="dropdown-item" href="https://www.youtube.com/watch?v=74Trj_ygN_4">ANTIGAS</a></li>
+                        <li><a target="_blank" class="dropdown-item" href="https://www.youtube.com/watch?v=DITcbnyGlgw">TODAS AS MÚSICAS</a></li>
+                      </ul>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      PERFIS OFICIAIS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a target="_blank" class="dropdown-item" href="#">INSTAGRAM</a></li>
+                      <li><a target="_blank" class="dropdown-item" href="#">YOUTUBE</a></li>
+                      <li><a target="_blank" class="dropdown-item" href="#">SPOTIFY</a></li>
+                      <li><a target="_blank" class="dropdown-item" href="#">iTUNES</a></li>
+                    </ul> 
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        OUTROS GÊNEROS MUSICAIS
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a target="_blank" class="dropdown-item" href="#">ROCK</a></li>
+                        <li><a target="_blank" class="dropdown-item" href="#">POP</a></li>
+                        <li><a target="_blank" class="dropdown-item" href="#">JAZZ</a></li>
+                        <li><a target="_blank" class="dropdown-item" href="#">MPB</a></li>
+                      </ul> 
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        SOBRE
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="Albuns.html">ALBUNS DA BANDA</a></li>
+                        <li><a class="dropdown-item" href="Desafio 6.html">MEDIA QUERIES</a></li>
+                        <li><a class="dropdown-item" href="Desafio 8.html">TABELA DE DISCOS</a></li>
+                      </ul>
+                      
+                      <!-- criar um botao na barra de nave. -->
+                    </li> 
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <!-- Adicionando a seção de imagem abaixo da barra de navegação -->
+        <div id="imagem">
+            <img src="imagens/Djavu.jpg" alt="DJavu" width="260" height="145">
+            <a target="_blank" href="https://open.spotify.com/intl-pt/artist/4adpoL1QBRZW6jWjRVMB04">
+                <i class="fab fa-spotify"></i> Spotify
+            </a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCNH0PIZJ0bqmV3kY2yH4IGQ">
+                <i class="fab fa-youtube"></i>Youtube
+            </a>
+        </div>
+        <div id="row">
+            <div class="column">
+                <h2>Introdução</h2>
+                <p>A Banda Djavú é um grupo musical brasileiro que teve sua origem na cidade de Capim Grosso, Bahia, em 2008. A Banda foi fundada pelos integrantes Nádila Freire, Geandson Rios e DJ Juninho Portugal.</p>
+                <p>O nome da banda foi inspirado no termo francês "déjà vu", que se traduz como "já visto".</p>
+                <p>Em 2008, a Banda Djavú lançou seu primeiro álbum intitulado "O Furacão é Show" e logo em seguida lançou seu primeiro DVD, que alcançou distribuição nacional.</p>
+            </div>
+            
+            <div class="column">
+                <h2>Curiosidades</h2>
+                <ul>
+                    <li>Dos integrantes originais, apenas Geandson Rios atua na banda atualmente.</li>
+                    <li>Adotaram o ritmo Tecnobrega, um gênero musical surgido no Pará que mistura elementos de música internacionalmente comercial, como música eletrônica e música pop, com gêneros regionais paraenses, como Calypso e forró eletrônico.</li>
+                    <li>Na virada de 2015 para 2016, apresentaram-se como uma das principais atrações da festa de réveillon oficial da cidade de São Paulo, realizada na Avenida Paulista.</li>
+                </ul>
+            </div>
+
+            <div id="column">
+                <h2>Músicas mais ouvidas</h2>
+                <div class="music-list">
+                    <div class="music-item">
+                        <span>Me libera</span>
+                        <a target="_blank" href="https://open.spotify.com/intl-pt/track/2Mu8Y7FBKm1pExucSO16Vf?si=1f09fdf1dddb445a" id="button">Ouvir agora</a>
+                    </div>
+                    <div class="music-item">
+                        <span>Rubi</span>
+                        <a target="_blank" href="https://open.spotify.com/intl-pt/track/3lsl4nVHAsSm6oag0qKCko?si=9825e62b44604c0c" id="button">Ouvir agora</a>
+                    </div>
+                    <div class="music-item">
+                        <span>Meteoro</span>
+                        <a target="_blank" href="https://open.spotify.com/intl-pt/track/48PzkSfXRDSGgPYAHn2HkK?si=aa2559389c8e47f6" id="button">Ouvir agora</a>
+                    </div>
+                    </div>
+    </body>
+</html>
