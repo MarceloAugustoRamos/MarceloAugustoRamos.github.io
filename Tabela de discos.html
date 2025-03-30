@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            body {
+                background-color: #ecebeb;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+            }
+
+            .header {
+            background-color: #636262;
+            color: rgb(129, 148, 255);
+            text-align: center;
+            padding: 20px;
+            }
+
+            /* The navbar container */
+            .topnav {
+            overflow: hidden;
+            background-color: #333;
+            }
+
+            /* Navbar links */
+            .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+
+            /* Links - change color on hover */
+            .topnav a:hover {
+            background-color: #616bfa;
+            color: rgb(0, 0, 0);
+            }
+
+
+            table, th, td{
+                border: 1px solid #000;
+                border-collapse: collapse;
+                padding: 5px;
+                text-align: center;
+                background-color: #ddd;
+            }
+            table {
+                margin: 3px auto;
+                text-align: center;
+            }
+
+            th {
+                padding: 10px;
+                background-color: #ceebef;
+                color: rgb(0, 0, 123);
+            }
+
+            #imagem {
+                width: 40px;
+                height: 40px;
+                border-radius: 5%;
+            }
+            
+            #capa {
+                width: 45px;
+                height: 45px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Tabela de discos</h1>
+        </div>
+
+        <div class="topnav">
+            <a href="index.html">Banda DJavú</a>
+            <a href="Desafio 4.html">Galeria de capas</a>
+            <a href="Desafio 6.html">Media Queries</a>
+        </div>
+        <table>
+            <thead>
+                <th>CAPA</th>
+                <th>NOME</th>
+                <th>ARTISTA</th>
+                <th>LANÇAMENTO</th>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="capa"><img src="imagens/hybridtheory.jpg" id="imagem"></td>
+                    <td>Hybrid Theory</td>
+                    <td>Linkin Park</td>
+                    <td>24/10/2000</td>
+                </tr>
+                <tr>
+                    <td id="capa"><img src="imagens/shogun.jpg" id="imagem"></td>
+                    <td>Shogun(Special Edition)</td>
+                    <td>Trivium</td>
+                    <td>24/09/2008</td>
+                </tr>
+                <tr>
+                    <td id="capa"><img src="imagens/nightmare.png" id="imagem"></td>
+                    <td>Nightmare</td>
+                    <td>Avenged Sevenfold</td>
+                    <td>23/07/2010</td>
+                </tr>
+                <tr>
+                    <td id="capa"><img src="imagens/trench.jpg" id="imagem"></td>
+                    <td>Trench</td>
+                    <td>Twenty One Pilots</td>
+                    <td>05/10/2018</td>
+                </tr>
+                <tr>
+                    <td id="capa"><img src="imagens/tmbte.jpg"id="imagem"></td>
+                    <td>Take Me Back To Eden</td>
+                    <td>Sleep Token</td>
+                    <td>19/05/2023</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

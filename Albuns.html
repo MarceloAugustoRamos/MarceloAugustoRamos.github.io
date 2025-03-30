@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Álbuns</title>
+    <style>
+        body {
+            background-color: #ddd;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #636262;
+            color: rgb(129, 148, 255);
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Barra de navegação */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: #616bfa;
+            color: rgb(0, 0, 0);
+        }
+
+        /* Estilo da galeria */
+        #galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centraliza os itens */
+            gap: 20px; /* Espaçamento entre os itens */
+            margin: 20px auto;
+            max-width: 1200px; /* Limita a largura máxima da galeria */
+        }
+
+        .album {
+            text-align: center;
+            width: 200px;
+        }
+
+        .album img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #000;
+            border-radius: 5px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .album img:hover {
+            transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+            border-color: #00f;
+            cursor: pointer;
+        }
+
+        .album p {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ÁLBUNS</h1>
+    </div>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="Desafio6.html">Media Queries</a>
+        <a href="Desafio8.html">Tabela de Discos</a>
+    </div>
+
+    <!-- Galeria de Álbuns -->
+    <div id="galeria">
+        <div class="album">
+            <a target="_blank" href="https://open.spotify.com/intl-pt/album/5H93Egq9XH6M9R1mkxQDch?si=a3a06ec8b51f4b1a">
+                <img src="imagens/a1.jpg" alt="Color Decay">
+            </a>
+            <p>Color Decay</p>
+        </div>
+        <div class="album">
+            <a target="_blank" href="https://open.spotify.com/intl-pt/album/6FzCpxT035ityoufuiWlGU?si=019cddbf2c3646ae">
+                <img src="imagens/a2.jpeg" alt="ERRA (Deluxe)">
+            </a>
+            <p>ERRA (Deluxe)</p>
+        </div>
+        <div class="album">
+            <a target="_blank" href="https://open.spotify.com/intl-pt/album/2sdKwkwaVrSlhKdTuAf2SC?si=169cf87c44294705">
+                <img src="imagens/a3.jpeg" alt="From The New World">
+            </a>
+            <p>From The New World</p>
+        </div>
+        <div class="album">
+            <a target="_blank" href="https://open.spotify.com/intl-pt/album/6QRURYmqe56BojUuWgTpX6?si=fd14605c1e3e4a0d">
+                <img src="imagens/a4.jpeg" alt="Obsidian">
+            </a>
+            <p>Obsidian</p>
+        </div>
+        <div class="album">
+            <a target="_blank" href="https://open.spotify.com/intl-pt/album/0A3ms3uYiTs9MPAfQrfoKt?si=4e70800a3c114f25">
+                <img src="imagens/a5.jpeg" alt="Periphery IV: HAIL STAN">
+            </a>
+            <p>Periphery IV: HAIL STAN</p>
+        </div>
+        <div class="album">
+            <a target="_blank" href="https://open.spotify.com/intl-pt/album/7FqHuAvmREiIwVXVpZ9ooP?si=7763ec031a0a4f03">
+                <img src="imagens/a6.png" alt="That's The Spirit">
+            </a>
+            <p>That's The Spirit</p>
+        </div>
+        <div class="album">
+            <a target="_blank" href="https://open.spotify.com/intl-pt/album/79sg58t1vRpcxudpP9uPtg?si=7bc0a6a9b73f4afb">
+                <img src="imagens/a7.jpeg" alt="Tsunami Sea">
+            </a>
+            <p>Tsunami Sea</p>
+        </div>
+        <div class="album">
+            <a target="_blank" href="https://open.spotify.com/intl-pt/album/7a8dWeQK8yeXWQioso69wN?si=046a38f4298e4d7c">
+                <img src="imagens/a8.jpg" alt="When The End Began">
+            </a>
+            <p>When The End Began</p>
+        </div>
+    </div>
+</body>
+</html>

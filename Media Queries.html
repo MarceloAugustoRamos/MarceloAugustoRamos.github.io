@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            body{
+                text-align: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+        
+            .header {
+            background-color: #636262;
+            color: rgb(129, 148, 255);
+            text-align: center;
+            padding: 20px;
+            }
+
+            /* The navbar container */
+            .topnav {
+            overflow: hidden;
+            background-color: #333;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            /* Navbar links */
+            .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            
+            }
+
+            /* Links - change color on hover */
+            .topnav a:hover {
+            background-color: #616bfa;
+            color: rgb(0, 0, 0);
+            }
+
+            #container{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            @media (max-width: 600px) {
+                body {
+                    background-color: orange;
+                    font-size: 15px;
+                }
+                #button {
+                    background-color: brown;
+                    padding: 2px;
+                    width: 80px;
+                    height: 15px;
+                }
+                #imagem{
+                    display: none;
+                }
+
+            }
+            @media (min-width: 601px) and (max-width: 900px){
+                body {
+                    background-color: aqua;
+                    font-size: 20px;
+                }
+                #button {
+                    background-color: rgb(29, 36, 90);
+                    padding: 5px;
+                    width: 130px;
+                    height: 30px;
+                    font-size: 25px;
+                }
+                #imagem{
+                    display: none;
+                }
+
+            }
+            @media (min-width: 901px){
+                body {
+                    background-color: purple;
+                    font-size: 30px;
+                }
+                #button {
+                    background-color: rgb(58, 15, 46);
+                    padding: 10px;
+                    width: 210px;
+                    font-size: 40px;
+                    height: 50px;
+                }
+            }
+            #button{
+                border-radius: 6%;
+                border: 2px solid black;
+                margin: 10px auto;
+            }
+            #button > a {
+                    color: white;
+                    text-decoration: none;
+                }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Media Queries</h1>
+        </div>
+        <div id="corpo">
+            <div class="topnav">
+                <a href="index.html">Banda DJavú</a>
+                <a href="Desafio 4.html">Galeria de capas</a>
+                <a href="Desafio 8.html">Tabela de discos</a>
+            </div>
+            <p>Metalcore é um gênero musical de fusão que combina elementos de metal extremo e punk hardcore. O termo é uma alusão aos dois gêneros, metal e hardcore.</p>
+            <p>O metalcore é conhecido por seu uso de breakdowns provindos do hardcore – que são passagens lentas e intensas que propiciam o moshing. Outra característica na instrumentação são os riffs pesados e rápidos ​​de guitarra do metal extremo, frequentemente utilizando tons de pedal percussivo e bateria dupla. Vocalistas do gênero geralmente fazem o uso de técnicas de vocais gritados (screaming ou fry scream) em conjunto com vocais limpos e melódicos, embora o vocal gutural também seja uma técnica popular dentro do gênero.</p>
+            <p>Parte das raízes do metalcore surgiu no final dos anos 1980 até o início dos anos 1990, quando os músicos começaram a fundir o punk hardcore com estilos de metal extremo. Durante o início dos anos 2000, o metalcore começou a ganhar mais destaque comercial. Muitas bandas foram fortemente influenciadas pelo death metal melódico sueco, fazendo com que o termo "metalcore melódico" fosse cunhado para descrevê-las.</p>
+            <div id="container">
+                <div id="button"><a target="_blank" href="https://youtu.be/dQw4w9WgXcQ?si=8SMNjOauIv4WKk-Q">Clique aqui</a></div>
+                <div id="imagem"><img src="imagens/dd.jpeg" width="200px" height="200px"></div>
+            </div>
+        </div>
+    </body>
+</html>
