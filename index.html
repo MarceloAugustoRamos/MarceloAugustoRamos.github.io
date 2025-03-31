@@ -4,11 +4,13 @@
         <title>Som Web - Banda Djavú</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
         <!-- Link para a biblioteca Font Awesome -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
         <style>
             * {
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
             }
             
             /* cabecalho da pagina */
@@ -144,7 +146,53 @@
             .music-item a {
                 margin-left: 10px;
             }
-
+            .footer {
+              text-align: center;
+              padding: 10px;
+              background-color: #636262;
+              color: white; 
+              margin-top: 20px;
+              position: fixed;
+              bottom: 0;
+              width: 100%;
+            }
+            .rodape {
+              background-color: #f36e20;
+              color: white;
+              height: auto;
+              width: 100%;
+              font-size: 16px;
+              font-family: helvetica;
+              position: fixed;
+              bottom: 0;
+              left: 0;
+            }
+            .rodape a {
+              text-decoration: none;
+              color: white;
+            }
+            .rodape p {
+              margin-bottom: 5px;
+            }
+            .rodape-div {
+              display: flex;
+              flex-wrap: wrap;
+              width: 100%;
+              margin: auto;
+              align-items: stretch;
+              padding: 10px 1px 10px 1px;
+            }
+            .rodape-div-1, .rodape-div-2 {
+              display: flex;
+              width: calc(100% / 4 - 20px);
+              padding: 1px;
+              margin: 5px;
+              justify-content: center;
+            }
+            .rodape span {
+              font-size: 20px;
+              color: white;
+            }
 
         </style>
     </head>
@@ -204,8 +252,6 @@
                         <li><a class="dropdown-item" href="Media Queries.html">MEDIA QUERIES</a></li>
                         <li><a class="dropdown-item" href="Tabela de discos.html">TABELA DE DISCOS</a></li>
                       </ul>
-                      
-                      <!-- criar um botao na barra de nave. -->
                     </li> 
                   </li>
                 </ul>
@@ -238,7 +284,6 @@
                     <li>Na virada de 2015 para 2016, apresentaram-se como uma das principais atrações da festa de réveillon oficial da cidade de São Paulo, realizada na Avenida Paulista.</li>
                 </ul>
             </div>
-
             <div id="column">
                 <h2>Músicas mais ouvidas</h2>
                 <div class="music-list">
@@ -255,5 +300,25 @@
                         <a target="_blank" href="https://open.spotify.com/intl-pt/track/48PzkSfXRDSGgPYAHn2HkK?si=aa2559389c8e47f6" id="button">Ouvir agora</a>
                     </div>
                     </div>
+                    <footer class="rodape" id="contato">
+                      <div class="rodape-div">
+                  
+                          <div class="rodape-div-1">
+                              <div class="rodape-div-1-coluna">
+                                <span><b>Alunos</b></span>
+                                <p>Marcelo Augusto Ramos</p>
+                                <p>Henrique Radavelli Machado</p>
+                                <p>Roberto Olbrich</p>
+                                <p>Lucas Musskopf</p>
+                              </div>
+                            </div>
+                            <div class="rodape-div-2">
+                              <div class="rodape-div-2-coluna">
+                  
+                                  <span><b>Turma</b></span>
+                                  <p>1°AN</p>
+                              </div>
+                          </div>
+                        </footer>
     </body>
 </html>
